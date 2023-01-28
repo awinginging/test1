@@ -1,0 +1,264 @@
+/*margin简写技巧*/
+/*如果提供全部四个参数值，将按上、右、下、左的顺序作用于四边。*/
+/*如果只提供一个，将用于全部的四边。*/
+/*如果提供两个，第一个用于上、下，第二个用于左、右。*/
+/*如果提供三个，第一个用于上，第二个用于左、右，第三个用于下。 */
+
+/* 声明字体图标 这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+    url('../fonts/icomoon.woff?tomleg') format('woff'),
+    url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/*版心*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*快捷导航模块*/
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+/*设置左右浮动*/
+.fl {
+    float:left;
+}
+
+.fr {
+    float:right;
+}
+
+.shortcut ul li{
+    float: left;
+}
+
+.style-red{
+    color: #C81623;
+}
+
+/*选择右浮动所有的偶数li 设置这些竖线的样式*/
+.shortcut .fr ul li:nth-child(even) {
+    margin: 9px 15px 0;
+    background-color: #666;
+    width: 1px;
+    height: 12px;
+}
+
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+
+.header{
+    position: relative;
+    /*height: 105px;*/
+    height: 150px;
+}
+
+.logo{
+    position: absolute;
+    top:35px;
+    height: 61px;
+    width: 171px;
+}
+
+.logo a {
+    /*设置a为块级元素 (同div)*/
+    display: block;
+    height: 61px;
+    width: 171px;
+    font-size: 0;
+    background: url(../image/logo.png) no-repeat;
+}
+
+.search {
+    position: absolute;
+    top:45px;
+    left: 346px;
+    height: 36px;
+    width: 538px;
+    border: 2px solid red;
+}
+
+.search input{
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button{
+    width: 80px;
+    height: 32px;
+    float: right;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+}
+
+.hotword{
+    top:91px;
+    left:348px;
+    position: absolute;
+}
+
+.hotword a {
+    margin: 0 10px;
+}
+
+.shopcar{
+    position: absolute;
+    top:40px;
+    right: 50px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 35px;
+    text-align: center;
+}
+
+.shopcar::before {
+    margin-right: 5px;
+    font-family: 'icomoon';
+    content: '\e93a';
+    color: #c81623;
+}
+
+.nav {
+    height: 55px;
+    border-bottom: 2px solid #c81623;
+}
+
+.nav .dropdown {
+    height: 53px;
+    width: 218px;
+    float: left;
+    background-color: #c81623;
+}
+
+.nav .navitems {
+    float: left;
+}
+
+.dropdown .dt{
+    width: 100%;
+    height: 100%;
+    /*这里用100% 让dt这个盒子把父盒子占满 dd只能去下面*/
+    color: #ffffff;
+    text-align: center;
+    line-height: 52px;
+    font-size: 21px;
+}
+
+.dropdown .dd{
+    /*display: none;*/
+    width: 218px;
+    height: 470px;
+    background-color: #c81623;
+}
+
+.dropdown .dd ul li {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 13px;
+    margin-left: 2px;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: white;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.dropdown .dd ul li a{
+    font-size: 16px;
+    color: white;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a{
+    height: 53px;
+    line-height: 53px;
+    font-size: 21px;
+    display: block;
+
+    /*设置a与li之间的距离 方便用户点击周围时也能点到目标区域 */
+    padding: 0 30px;
+}
+
+.footer {
+    margin-top: 20px;
+    height: 420px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod-sevice {
+    height: 85px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.mod-sevice ul li{
+    width: 300px;
+    height: 50px;
+    float: left;
+    padding-left: 35px;
+}
+
+.mod-sevice ul li h5 {
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 8px;
+    background: url("../image/icons.png") no-repeat -252px -2px;
+}
+
+.sevice-txt h4 {
+    font-size: 14px;
+}
+
+.sevice-txt p {
+    font-size: 12px;
+}
+
+.mod-help {
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod-help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod-help dl dt {
+    margin-bottom: 10px;
+}
+
+.mod-help dl dd {
+    font-size: 15px;
+}
+
+.mod-help dl:last-child{
+    width: 90px;
+    text-align: center;
+}

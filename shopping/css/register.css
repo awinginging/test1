@@ -1,0 +1,78 @@
+/*版心*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 84px;
+    border-bottom: 2px solid #c81623;
+}
+
+.logo {
+    padding-top: 18px;
+}
+
+.registerarea {
+    height: 522px;
+    border:1px solid #CCCCCC;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.login a {
+    color: #c81623;
+}
+
+.form {
+    display: block;
+    width: 500px;
+    align :center;
+    margin: 50px auto 0;
+}
+
+.tab {
+    align:center;
+}
+
+.tab tr {
+    display: block;
+    margin-top: 30px;
+}
+
+.but {
+    border:1px solid #ccc;
+    padding:7px 0px;
+    border-radius:3px;
+    width: 300px;
+}
+
+.over {
+    color: #c81623;
+}
+
+.over input{
+    align-items: center;
+    font-size: 20px;
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    color: white;
+    margin-left: 70px;
+}
+
+

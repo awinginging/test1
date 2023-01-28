@@ -1,0 +1,175 @@
+.main {
+    position: relative;
+    height: 457px;
+    width: 1000px;
+    margin-left: 230px;
+    margin-top: 10px;
+}
+
+.focus {
+    width: 710px;
+    height: 457px;
+    position: relative;
+}
+
+.list {
+    width: 710px;
+    height: 457px;
+    position: relative;
+    padding-left: 0px;
+}
+
+.item {
+    width: 710px;
+    height: 457px;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all .8s;
+}
+
+.item:nth-child(1) {
+    background-color: skyblue;
+}
+
+.item:nth-child(2) {
+    background-color: yellowgreen;
+}
+
+.item:nth-child(3) {
+    background-color: rebeccapurple;
+}
+
+.item:nth-child(4) {
+    background-color: pink;
+}
+
+.item:nth-child(5) {
+    background-color: orange;
+}
+
+.item.active {
+    z-index: 10;
+    opacity: 1;
+}
+
+.btn {
+    width: 60px;
+    height: 100px;
+    z-index: 100;
+    top: 150px;
+    position: absolute;
+}
+
+#leftBtn {
+    left: 0px;
+}
+
+#rightBtn {
+    right: 0px;
+}
+
+.pointList {
+    list-style: none;
+    padding-left: 0px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 200;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.focus ul li img {
+    width: 710px;
+    height: 457px;
+}
+
+/*用position覆盖 好好看这里*/
+.news {
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width: 270px;
+    height: 457px;
+}
+.top {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.a1 ul li img {
+    float: left;
+    width: 135px;
+    height: 120px;
+}
+
+.reco{
+    height: 175px;
+    margin-top: 20px;
+}
+
+.reco-h{
+    float: left;
+    height: 175px;
+    width: 200px;
+    background-color: #E5E5E5;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.reco-b{
+    float: left;
+}
+
+.reco-b ul li img {
+    height: 175px;
+    width: 250px;
+}
+.reco-b ul li{
+    float: left;
+}
+
+.like{
+    height: 1600px;
+    margin-top: 20px;
+}
+
+.you {
+    height: 40px;
+}
+
+.you .font {
+    font-weight:bolder;
+    font-size: 30px;
+}
+.you ul li {
+    margin-left: 5px;
+    float: left;
+}
+
+.iiii {
+    margin-top: 12px;
+}
+
+.iiii ul li img {
+    width: 333px;
+    height: 360px;
+}
+
+.iiii ul li {
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
